@@ -1,9 +1,10 @@
-package py.com.jmbr.java.commons.exceptions;
+package py.com.jmbr.java.commons.exception;
 
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpStatus;
+import lombok.Getter;
 
 @AllArgsConstructor
+@Getter
 public class ExceptionResponse {
     private final String message;
     private final JMBRExceptionType type;

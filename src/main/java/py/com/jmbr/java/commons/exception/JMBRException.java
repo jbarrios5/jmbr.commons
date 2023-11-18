@@ -1,4 +1,4 @@
-package py.com.jmbr.java.commons.exceptions;
+package py.com.jmbr.java.commons.exception;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 
 @Getter
 @Setter
-public class JMBRException extends Exception{
+public class JMBRException extends RuntimeException{
     private JMBRExceptionType type;
     private HttpStatus code;
 
@@ -15,5 +15,6 @@ public class JMBRException extends Exception{
         this.type = JMBRExceptionType;
         this.code = code;
     }
+
 
 }

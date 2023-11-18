@@ -1,4 +1,4 @@
-package py.com.jmbr.java.commons.exceptions;
+package py.com.jmbr.java.commons.exception;
 
 public enum JMBRExceptionType {
     WARNING,
