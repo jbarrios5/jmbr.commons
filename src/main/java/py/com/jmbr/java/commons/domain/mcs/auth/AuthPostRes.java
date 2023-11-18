@@ -1,8 +1,9 @@
-package py.com.jmbr.java.commons.domain;
+package py.com.jmbr.java.commons.domain.mcs.auth;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import py.com.jmbr.java.commons.domain.User;
 
 @Getter
 @Setter
