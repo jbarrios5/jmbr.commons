@@ -10,4 +10,11 @@ import py.com.jmbr.java.commons.domain.mcs.user.UserGetRes;
 @Setter
 public class UserGetResData {
     private UserGetRes data;
+
+    @Override
+    public String toString() {
+        return "UserGetResData{" +
+                "data=" + data +
+                '}';
+    }
 }

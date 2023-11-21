@@ -15,9 +15,20 @@ public class User {
     private Long id;
     private String name;
     private String document;
-    @JsonIgnore()
     private String password;
     @JsonProperty("last_name")
     private String lastName;
     private Boolean status;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", document='" + document + '\'' +
+
+                ", lastName='" + lastName + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }
