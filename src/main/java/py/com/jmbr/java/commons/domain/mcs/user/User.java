@@ -1,4 +1,4 @@
-package py.com.jmbr.java.commons.domain;
+package py.com.jmbr.java.commons.domain.mcs.user;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
