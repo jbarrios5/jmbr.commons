@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.validation.constraints.NotBlank;
+
 @NoArgsConstructor
 @Getter
 @Setter
@@ -14,7 +16,9 @@ public class User {
 
     private Long id;
     private String name;
+    @NotBlank(message = "user document is required")
     private String document;
+    @NotBlank(message = "user password is required")
     private String password;
     @JsonProperty("last_name")
     private String lastName;
