@@ -1,5 +1,6 @@
 package py.com.jmbr.java.commons.domain.mcs.user;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,5 +11,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 public class UserPostRes {
-    private User user;
+    @JsonProperty("is_inserted")
+    private Boolean isInserted;
+    private String message;
 }

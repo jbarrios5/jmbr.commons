@@ -14,7 +14,7 @@ public class RequestContextInitializer implements HandlerInterceptor {
     private static final Logger logger = LoggerFactory.getLogger(RequestContextInitializer.class);
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        logger.info("Request{}",request.toString());
+        logger.info("Request{}",request.getRequestURI());
         if(request.getRequestURI().contains("/swagger"))
             return Boolean.TRUE;
         HandlerMethod handlerMethod = (HandlerMethod) handler;
