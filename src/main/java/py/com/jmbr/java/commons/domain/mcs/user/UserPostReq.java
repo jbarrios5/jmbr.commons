@@ -5,13 +5,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
-@ToString
-@Getter
-@Setter
-@NoArgsConstructor
-public class UserPostReq {
-    @NotNull(message = "user can not be null")
-    private User user;
-}
+    @ToString
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    public class UserPostReq {
+        @NotNull(message = "user can not be null")
+        @Valid
+        private User user;
+    }

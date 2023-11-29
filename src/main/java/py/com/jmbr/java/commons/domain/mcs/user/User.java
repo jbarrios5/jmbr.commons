@@ -22,7 +22,7 @@ public class User {
     private String password;
     @JsonProperty("last_name")
     private String lastName;
-    private Boolean status;
+    private String status;
 
     @Override
     public String toString() {
