@@ -1,2 +1,12 @@
-# jmbr.commons
-Componente para las clases communes 
+# JMBR COMMONS
+Componente para las clases communes utilizadas por los diferentes microservicios.
+
+Tambien posee el manejo del pre handle y  anotaciones customizadas.
+
+Componentes que lo utilizan actualmente ```2023-11-30```
+| Componentes | Descripcion |
+| ------ | ------ |
+| mcs.auth | encargado de la autenticacion|
+| mcs.user | maneja las operaciones con usuarios |
+| api.authentication | manejador de peticiones, valida api key y acesstoken |
+
