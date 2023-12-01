@@ -1,7 +1,7 @@
 # JMBR COMMONS
-Componente para las clases communes utilizadas por los diferentes microservicios.
+Componente para las clases comunes utilizadas por los diferentes microservicios y apis.
 
-Tambien posee el manejo del pre handle y  anotaciones customizadas.
+Tambien posee el manejo del pre-handle y  anotaciones customizadas.
 
 Componentes que lo utilizan actualmente ```2023-11-30```
 | Componentes | Descripcion |
