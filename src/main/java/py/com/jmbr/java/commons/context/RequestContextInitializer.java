@@ -22,6 +22,7 @@ public class RequestContextInitializer implements HandlerInterceptor {
         if(request.getRequestURI().contains("/swagger"))
             return Boolean.TRUE;
         HandlerMethod handlerMethod = (HandlerMethod) handler;
+        logger.info("handlerMethod={}",handlerMethod);
         if(handlerMethod.getMethodAnnotation(SecurityAccess.class) == null)
             return Boolean.TRUE;
         if(handlerMethod.getMethodAnnotation(SecurityAccess.class).operation() == OperationAllow.POST_LOGIN){
@@ -30,7 +31,7 @@ public class RequestContextInitializer implements HandlerInterceptor {
             if( apiKey == null){
                 logger.warn(RequestUtil.LOG_FORMATT,"no-log-id","apiKey is required",null);
                 throw new JMBRException("Error en autenticacion", JMBRExceptionType.FALTAL, HttpStatus.BAD_REQUEST);
-            }
+             }
 
 
             return Boolean.TRUE;

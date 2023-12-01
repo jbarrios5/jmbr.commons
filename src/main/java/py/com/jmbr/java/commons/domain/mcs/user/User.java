@@ -25,6 +25,7 @@ public class User {
     @JsonProperty("last_name")
     private String lastName;
     private String status;
+    private String role;
 
     @Override
     public String toString() {
@@ -32,7 +33,7 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", document='" + document + '\'' +
-
+                ", role='" + role + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", status=" + status +
                 '}';
