@@ -31,10 +31,7 @@ public class RequestContextInitializer implements HandlerInterceptor {
                 logger.warn(RequestUtil.LOG_FORMATT,"no-log-id","apiKey is required",null);
                 throw new JMBRException("Error en autenticacion", JMBRExceptionType.FALTAL, HttpStatus.BAD_REQUEST);
             }
-            if(!apiKey.equals(handlerMethod.getMethodAnnotation(SecurityAccess.class).apiKey())){
-                logger.warn(RequestUtil.LOG_FORMATT,"no-log-id","apiKey no match",apiKey);
-                throw new JMBRException("Error en autenticacion", JMBRExceptionType.FALTAL, HttpStatus.BAD_REQUEST);
-            }
+
 
             return Boolean.TRUE;
 

@@ -9,5 +9,4 @@ import java.lang.annotation.Target;
 @Retention(value = RetentionPolicy.RUNTIME)
 public @interface SecurityAccess {
     OperationAllow operation() default OperationAllow.POST_LOGIN;
-    String apiKey () default "";
 }
