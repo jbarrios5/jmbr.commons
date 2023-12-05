@@ -56,7 +56,10 @@ public class RequestContextInitializer implements HandlerInterceptor {
     }
 
     private boolean isAccessTokenValid(String accessToken){
-
+        if(accessToken.isBlank()){
+            logger.warn(RequestUtil.LOG_FORMATT,"no-log-id","accessToken is required",null);
+            throw new JMBRException("Error en autenticacion", JMBRExceptionType.FALTAL, HttpStatus.BAD_REQUEST);
+        }
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders header = new HttpHeaders();
         ResponseEntity<Boolean> response;
@@ -66,7 +69,7 @@ public class RequestContextInitializer implements HandlerInterceptor {
                 .queryParam("access_token",accessToken)
                 .toUriString();
         logger.info(RequestUtil.LOG_FORMATT,"no-log-id","isAccessTokenValid:request",entity.toString());
-        response = restTemplate.exchange(URI, HttpMethod.POST,entity,Boolean.class);
+        response = restTemplate.exchange(URI, HttpMethod.GET,entity,Boolean.class);
         logger.info(RequestUtil.LOG_FORMATT,"no-log-id","isAccessTokenValid:response",response);
         if(response.getBody() != null)
             return response.getBody();
