@@ -19,7 +19,7 @@ public class Transaction {
 
     @NotNull(message = "transaction_type is required")
     @JsonProperty("transaction_type")
-    private Integer transactionType;
+    private TransactionType transactionType;
 
     @NotNull(message = "user_id is required")
     @JsonProperty("user_id")
@@ -27,7 +27,7 @@ public class Transaction {
 
     @NotNull(message = "church_id is required")
     @JsonProperty("church_id")
-    private Integer churchId;
+    private Church churchId;
     private String details;
 
     private String created;
