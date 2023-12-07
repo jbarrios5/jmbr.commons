@@ -26,8 +26,8 @@ public class Transaction {
     private Integer userId;
 
     @NotNull(message = "church_id is required")
-    @JsonProperty("church_id")
-    private Church churchId;
+    
+    private Church church;
     private String details;
 
     private String created;
