@@ -21,6 +21,5 @@ public class Church {
     @NotNull
     @JsonProperty("current_balance")
     private BigDecimal currentBalance;
-    @JsonIgnore()
     private String created;
 }
