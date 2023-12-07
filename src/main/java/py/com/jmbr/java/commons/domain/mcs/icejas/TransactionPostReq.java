@@ -14,4 +14,16 @@ public class TransactionPostReq {
     @NotNull(message = "transaction is required")
     @Valid
     private Transaction transaction;
+
+    @NotNull(message = "church is required")
+    @Valid
+    private Church church;
+
+    @NotNull(message = "user_id is required")
+    @JsonProperty("user_id")
+    private Integer userId;
+
+    @NotNull(message = "transaction_type is required")
+    @JsonProperty("transaction_type")
+    private TransactionType transactionType;
 }
