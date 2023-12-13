@@ -22,7 +22,6 @@ public class User {
     private String document;
     @NotBlank(message = "user password is required")
     private String password;
-    @JsonProperty("last_name")
     private String lastName;
     private String status;
     private String role;
