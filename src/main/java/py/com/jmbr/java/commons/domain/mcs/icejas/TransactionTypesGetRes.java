@@ -9,6 +9,5 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class TransactionTypesGetRes {
-    @JsonProperty("transaction_types")
     List<TransactionType> transactionTypes;
 }
