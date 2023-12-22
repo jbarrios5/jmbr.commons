@@ -17,6 +17,6 @@ public class TransactionDetailPostRes {
     private String transactionCategory;
     private BigDecimal currentBalance;
     private String transactionDetail;
-    private String registerDate;
+    private String registeredDate;
     private Integer userId;
 }

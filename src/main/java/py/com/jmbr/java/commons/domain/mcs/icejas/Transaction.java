@@ -9,6 +9,8 @@ import lombok.ToString;
 
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
+import java.util.Date;
+
 @NoArgsConstructor
 @Getter
 @Setter
@@ -18,7 +20,8 @@ public class Transaction {
     @NotNull(message = "amount can't be null")
     private BigDecimal amount;
     private String details;
-    private String created;
+    @NotNull(message = "register date can't be null")
+    private Date registerDate;
 
 
 }
