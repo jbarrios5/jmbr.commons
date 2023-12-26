@@ -6,17 +6,13 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.math.BigDecimal;
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
 public class TransactionDetailGetRes {
-    private Integer transactionId;
-    private BigDecimal amount;
-    private String transactionTypeName;
-    private String transactionCategory;
-    private BigDecimal currentBalance;
-    private String transactionDetail;
-    private String registeredDate;
-    private Integer userId;
+
+    private List<TransactionDetails> details;
 }
