@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @ToString
-public class TransactionDetailPostRes {
+public class TransactionDetailGetRes {
     private Integer transactionId;
     private BigDecimal amount;
     private String transactionTypeName;

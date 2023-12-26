@@ -3,11 +3,11 @@ package py.com.jmbr.java.commons.beans.mcs.icejas;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import py.com.jmbr.java.commons.domain.mcs.icejas.TransactionDetailPostRes;
+import py.com.jmbr.java.commons.domain.mcs.icejas.TransactionDetailGetRes;
 
 @Getter
 @Setter
 @NoArgsConstructor
-public class TransactionDetailPostResData {
-    private TransactionDetailPostRes data;
+public class TransactionDetailGetResData {
+    private TransactionDetailGetRes data;
 }
