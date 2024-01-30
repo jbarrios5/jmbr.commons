@@ -5,10 +5,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import py.com.jmbr.java.commons.domain.mcs.icejas.TransactionReportGetRes;
+
+import java.util.List;
+
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
 public class TransactionReportGetResData {
-    private TransactionReportGetRes data;
+    private List<TransactionReportGetRes> data;
 }
