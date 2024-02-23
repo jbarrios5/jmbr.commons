@@ -1,5 +1,6 @@
 package py.com.jmbr.java.commons.domain.mcs.icejas;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
@@ -21,7 +22,7 @@ public class Transaction {
     private BigDecimal amount;
     private String details;
     @NotNull(message = "register date can't be null")
-    private Date registerDate;
+    private String registerDate;
 
 
 }
